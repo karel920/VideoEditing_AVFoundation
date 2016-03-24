@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="PHInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZN6-bD-Wgv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJ4-5W-4Kk">
+                                <rect key="frame" x="15" y="15" width="291" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name your highlight Video" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xlb-z0-npq" customClass="PHTextField">
+                                <rect key="frame" x="15" y="45" width="291" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhj-Ic-pkX">
+                                <rect key="frame" x="15" y="90" width="290" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Write a short description of this video. Remember that it is a compilation of highlight clips." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bU2-6E-N3s">
+                                <rect key="frame" x="15" y="125" width="290" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xlb-z0-npq" firstAttribute="leading" secondItem="ZN6-bD-Wgv" secondAttribute="leading" constant="15" id="39c-LR-l3L"/>
+                            <constraint firstAttribute="trailing" secondItem="BJ4-5W-4Kk" secondAttribute="trailing" constant="14" id="Be8-BT-0CV"/>
+                            <constraint firstItem="BJ4-5W-4Kk" firstAttribute="top" secondItem="ZN6-bD-Wgv" secondAttribute="top" constant="15" id="BoC-2P-qSK"/>
+                            <constraint firstAttribute="trailing" secondItem="bU2-6E-N3s" secondAttribute="trailing" constant="15" id="DYg-sj-PGN"/>
+                            <constraint firstItem="bU2-6E-N3s" firstAttribute="top" secondItem="qhj-Ic-pkX" secondAttribute="bottom" constant="14" id="DvJ-Gn-4DG"/>
+                            <constraint firstAttribute="trailing" secondItem="qhj-Ic-pkX" secondAttribute="trailing" constant="15" id="O4w-vj-Ju2"/>
+                            <constraint firstItem="qhj-Ic-pkX" firstAttribute="leading" secondItem="ZN6-bD-Wgv" secondAttribute="leading" constant="15" id="R76-mw-qad"/>
+                            <constraint firstAttribute="trailing" secondItem="Xlb-z0-npq" secondAttribute="trailing" constant="14" id="bNY-IS-5z9"/>
+                            <constraint firstAttribute="bottom" secondItem="bU2-6E-N3s" secondAttribute="bottom" id="dJj-Xv-3aG"/>
+                            <constraint firstItem="BJ4-5W-4Kk" firstAttribute="leading" secondItem="ZN6-bD-Wgv" secondAttribute="leading" constant="15" id="eMI-fC-Kp2"/>
+                            <constraint firstItem="Xlb-z0-npq" firstAttribute="top" secondItem="BJ4-5W-4Kk" secondAttribute="bottom" constant="8" id="fay-pq-wAa"/>
+                            <constraint firstItem="bU2-6E-N3s" firstAttribute="leading" secondItem="ZN6-bD-Wgv" secondAttribute="leading" constant="15" id="jFN-6L-z36"/>
+                            <constraint firstItem="qhj-Ic-pkX" firstAttribute="top" secondItem="Xlb-z0-npq" secondAttribute="bottom" constant="15" id="peA-lQ-CUg"/>
+                            <constraint firstItem="bU2-6E-N3s" firstAttribute="centerX" secondItem="ZN6-bD-Wgv" secondAttribute="centerX" id="ugt-Na-Luu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZN6-bD-Wgv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="MM4-jv-c8B"/>
+                    <constraint firstItem="ZN6-bD-Wgv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="TgS-FN-mYK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZN6-bD-Wgv" secondAttribute="bottom" constant="-9" id="dnY-8R-0Oc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZN6-bD-Wgv" secondAttribute="trailing" constant="-8" id="sZf-17-NlJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="txtVideoDescription" destination="bU2-6E-N3s" id="J7t-du-snd"/>
+                <outlet property="txtVideoName" destination="Xlb-z0-npq" id="bIN-7e-8tC"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="295.5"/>
+        </tableViewCell>
+    </objects>
+</document>

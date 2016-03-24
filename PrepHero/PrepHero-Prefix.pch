@@ -1,0 +1,29 @@
+//
+//  PrepHero-Prefix.pch
+//  PrepHero
+//
+//  Created by Xinjiang Shao on 7/16/15.
+//  Copyright (c) 2015 PrepHero, Inc. All rights reserved.
+//
+
+#ifndef PrepHero_PrepHero_Prefix_pch
+#define PrepHero_PrepHero_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <SVProgressHUD.h>
+#import <Parse/Parse.h>
+
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+#import <TwitterCore/TwitterCore.h>
+#import <TwitterKit/TwitterKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+//#import <NewRelicAgent/NewRelic.h>
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import <AFNetworking.h>
+#import "PHConstants.h"
+#import "PHUtil.h"
+
+#endif

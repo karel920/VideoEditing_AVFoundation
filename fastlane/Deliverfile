@@ -1,0 +1,68 @@
+###################### App Metadata ######################
+# Update the app description and metadata in the ./metadata folder
+
+###################### Screenshots ######################
+# Store all screenshots in the ./screenshots folder separated
+# by language. If you use snapshot, this happens automatically
+
+###################### IPA File ######################
+# This part is only relevant, if you want to submit a new binary
+# If you don't use fastlane (https://github.com/KrauseFx/fastlane)
+# you can set the path to your ipa file using:
+#ipa "../PrepHero.ipa"
+
+# to provide an ipa file for TestFlight distribution, use beta_ipa 
+beta_ipa "../PrepHero.ipa"
+
+# The version of your app - remove this if you provide an ipa file
+#version "1.0"
+
+###################### More Options ######################
+# If you want to have even more control, check out the documentation
+# https://github.com/KrauseFx/deliver/blob/master/Deliverfile.md
+
+
+###################### Automatically generated ######################
+# Feel free to remove the following lines if you use fastlane
+
+app_identifier "com.prephero.mobile" # The bundle identifier of your app
+apple_id "1072936638" # This is NOT your Apple login ID, but the App ID of your app
+email "xinjiang.shao@exactsports.com" # the login email address
+
+screenshots_path "./screenshots"
+
+title({
+  "en-US" => "PrepHero"
+})
+
+# changelog({
+#   "en-US" => "iPhone 6 (Plus) Support" 
+# })
+
+description({
+  'en-US' => "PrepHero was built to help high school athletes connect with college coaches and improve their chances of getting recruited and landing a college scholarship. We walk you through building a professional recruiting résumé and then help you reach out to the coaches at the schools you're most interested in attending."
+})
+
+copyright "2015-2016 PrepHero Inc."
+
+#automatic_release true
+
+app_review_information({
+  first_name: "Xinjiang",
+  last_name: "Shao",
+  phone_number: "3126943955",
+  email_address: "xinjiang.shao@exactsports.com",
+  demo_user: "xinjiang.shao+prephero@exactsports.com",
+  demo_password: "123456",
+  notes: "no note"
+})
+
+#primary_category "Business"
+#secondary_category "Books"
+
+#ratings_config_path "./ratings.json"
+
+#price_tier 0
+
+
+

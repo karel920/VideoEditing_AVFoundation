@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoEditCell" id="KGk-i7-Jjw" customClass="PHVideosEditTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vma-mE-IBM">
+                        <rect key="frame" x="14" y="9" width="37" height="81"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZW-Dv-mkf">
+                                <rect key="frame" x="1" y="1" width="35" height="39"/>
+                                <state key="normal" backgroundImage="Button"/>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX6-yl-4yh">
+                                <rect key="frame" x="1" y="41" width="35" height="39"/>
+                                <state key="normal" backgroundImage="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8H-I6-VJU">
+                        <rect key="frame" x="213" y="15" width="89" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <state key="normal" title="Edit" backgroundImage="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biu-OC-T9Q">
+                        <rect key="frame" x="213" y="53" width="89" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <state key="normal" title="Delete" backgroundImage="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jud-Ig-24c">
+                        <rect key="frame" x="70" y="8" width="122" height="84"/>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jAP-Ud-naP" customClass="VIMVideoPlayerView">
+                        <rect key="frame" x="70" y="8" width="122" height="84"/>
+                        <color key="backgroundColor" red="0.0" green="0.63780410494418716" blue="1" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDelete" destination="biu-OC-T9Q" id="aGX-Or-vyI"/>
+                <outlet property="btnEdit" destination="F8H-I6-VJU" id="CIV-sn-sJZ"/>
+                <outlet property="btnPositionDown" destination="hX6-yl-4yh" id="l4y-bw-XDV"/>
+                <outlet property="btnPositionUp" destination="JZW-Dv-mkf" id="LBj-uT-qbm"/>
+                <outlet property="buttonView" destination="vma-mE-IBM" id="Wdy-lg-41Y"/>
+                <outlet property="playView" destination="jAP-Ud-naP" id="Hws-Vi-cfI"/>
+                <outlet property="preVideoView" destination="Jud-Ig-24c" id="kh9-L4-PBz"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Button" width="200" height="30"/>
+    </resources>
+</document>

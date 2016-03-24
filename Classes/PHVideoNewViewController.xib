@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PHVideoNewViewController">
+            <connections>
+                <outlet property="tableView" destination="hth-Yi-ZRH" id="kCx-Rp-nxH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrS-9x-6Qt" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="100" sectionHeaderHeight="1" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hth-Yi-ZRH">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="lrc-Zv-KoS"/>
+                                <outlet property="delegate" destination="-1" id="0OI-GC-yzX"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hth-Yi-ZRH" firstAttribute="top" secondItem="PrS-9x-6Qt" secondAttribute="top" id="2h4-V4-bsT"/>
+                        <constraint firstAttribute="trailing" secondItem="hth-Yi-ZRH" secondAttribute="trailing" id="6AZ-Mx-7F9"/>
+                        <constraint firstItem="hth-Yi-ZRH" firstAttribute="centerY" secondItem="PrS-9x-6Qt" secondAttribute="centerY" id="GKP-FT-2FK"/>
+                        <constraint firstItem="hth-Yi-ZRH" firstAttribute="centerX" secondItem="PrS-9x-6Qt" secondAttribute="centerX" id="PZK-nj-Xan"/>
+                        <constraint firstItem="hth-Yi-ZRH" firstAttribute="leading" secondItem="PrS-9x-6Qt" secondAttribute="leading" id="WWb-5u-fGC"/>
+                        <constraint firstAttribute="bottom" secondItem="hth-Yi-ZRH" secondAttribute="bottom" id="iTv-1x-RmF"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PrS-9x-6Qt" secondAttribute="bottom" constant="48" id="32O-BL-lSq"/>
+                <constraint firstItem="PrS-9x-6Qt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EvM-8o-KO1"/>
+                <constraint firstItem="PrS-9x-6Qt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Sqi-78-MB8"/>
+                <constraint firstAttribute="trailing" secondItem="PrS-9x-6Qt" secondAttribute="trailing" id="slN-A2-haf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="285" y="218"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,1107 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5500B1CF1C20C54300321AA7 /* PHVideoSegmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5500B1CE1C20C54300321AA7 /* PHVideoSegmentsViewController.m */; };
+		5500B1E41C23879600321AA7 /* PHVideoMerge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5500B1E11C23879600321AA7 /* PHVideoMerge.m */; };
+		5500B1E51C23879600321AA7 /* PHVideoSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5500B1E31C23879600321AA7 /* PHVideoSessionManager.m */; };
+		5500B1E81C23880F00321AA7 /* PHRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5500B1E71C23880F00321AA7 /* PHRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		551877551B30D9FE00F9D5D9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551877541B30D9FE00F9D5D9 /* AVFoundation.framework */; };
+		55373E221BB0AB7B002D057D /* ProfileHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55373E211BB0AB7B002D057D /* ProfileHeadView.m */; };
+		554A77381B3B392100F94C3E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 554A77371B3B392100F94C3E /* Settings.bundle */; };
+		554B89041BB210B000ADC19B /* PHForcedOrientationNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B89031BB210B000ADC19B /* PHForcedOrientationNavController.m */; };
+		554B890D1BB34ADE00ADC19B /* Video+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B890A1BB34ADE00ADC19B /* Video+CoreDataProperties.m */; };
+		554B890E1BB34ADE00ADC19B /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B890C1BB34ADE00ADC19B /* Video.m */; };
+		554B89111BB3542700ADC19B /* PHActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B89101BB3542700ADC19B /* PHActionButton.m */; };
+		554F2AF91B33586A00563DCF /* PHPermissionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 554F2AF81B33586A00563DCF /* PHPermissionsManager.m */; };
+		554F2AFC1B33595900563DCF /* PHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 554F2AFB1B33595900563DCF /* PHFileManager.m */; };
+		554F2B051B335CFA00563DCF /* PHCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554F2B041B335CFA00563DCF /* PHCaptureViewController.m */; };
+		5550FC611B6B27370013DF82 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5550FC601B6B27370013DF82 /* MediaPlayer.framework */; };
+		555140D61B70176D00766E26 /* PHProfileImageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 555140D51B70176D00766E26 /* PHProfileImageNode.m */; };
+		5551C5951B309B5A00533E83 /* UIImage+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5551C5941B309B5A00533E83 /* UIImage+Helper.m */; };
+		555AAF971B59A8C300835B15 /* PHUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 555AAF961B59A8C300835B15 /* PHUtil.m */; };
+		557391EC1B41F100000B80CC /* PHMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557391EB1B41F100000B80CC /* PHMainTabBarController.m */; };
+		557391EF1B41F5A3000B80CC /* PHSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557391EE1B41F5A3000B80CC /* PHSettingsViewController.m */; };
+		557391F31B42F4A4000B80CC /* PHVideoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557391F21B42F4A4000B80CC /* PHVideoPickerViewController.m */; };
+		5576D8681BA9F324002B2C9C /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5576D8671BA9F324002B2C9C /* SafariServices.framework */; };
+		5576D86B1BAA0062002B2C9C /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5576D86A1BAA0062002B2C9C /* LogInViewController.m */; };
+		55920F001C238AB600758D34 /* PHEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A14EA7D1BED3C5E007627A3 /* PHEncoder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		559F1F001BAA191A004EC89B /* VideoMigiration.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 559F1EFF1BAA191A004EC89B /* VideoMigiration.xcmappingmodel */; };
+		559F1F031BAA1988004EC89B /* VideoTransformationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 559F1F021BAA1988004EC89B /* VideoTransformationPolicy.m */; };
+		55AB56F61B851FB8002F4401 /* PHTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AB56F51B851FB8002F4401 /* PHTutorialViewController.m */; };
+		55AB56F91B8522A4002F4401 /* PHPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55AB56F81B8522A4002F4401 /* PHPageViewController.m */; };
+		55B31AD51B55D698000234F5 /* PHLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B31AD41B55D698000234F5 /* PHLocationManager.m */; };
+		55B96D441B2B6FC2004F8145 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B96D431B2B6FC2004F8145 /* main.m */; };
+		55B96D471B2B6FC2004F8145 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B96D461B2B6FC2004F8145 /* AppDelegate.m */; };
+		55B96D4A1B2B6FC2004F8145 /* PrepHero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55B96D481B2B6FC2004F8145 /* PrepHero.xcdatamodeld */; };
+		55B96D501B2B6FC2004F8145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B96D4E1B2B6FC2004F8145 /* Main.storyboard */; };
+		55B96D521B2B6FC2004F8145 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B96D511B2B6FC2004F8145 /* Images.xcassets */; };
+		55B96D551B2B6FC2004F8145 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B96D531B2B6FC2004F8145 /* LaunchScreen.xib */; };
+		55B96D771B2B8AC7004F8145 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B96D761B2B8AC7004F8145 /* UIColor+Helper.m */; };
+		55C8C5761B7D2346002A9CDF /* UIVIew+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C8C5751B7D2346002A9CDF /* UIVIew+Helper.m */; };
+		55CFF6451B7E62AB00C8B55B /* PHCameraInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CFF6441B7E62AB00C8B55B /* PHCameraInfoView.m */; };
+		55CFF6481B7E73F200C8B55B /* PHRecordingControlls.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CFF6471B7E73F200C8B55B /* PHRecordingControlls.m */; };
+		55D5C8281B75560800E1158E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D5C8271B75560800E1158E /* SpriteKit.framework */; };
+		55D898E81B4EF5CF0023C932 /* PHApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D898E71B4EF5CF0023C932 /* PHApiClient.m */; };
+		55E0E3251BAB54A70048C51E /* PHPrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E0E3241BAB54A70048C51E /* PHPrimaryButton.m */; };
+		55E0E3281BAC6E6E0048C51E /* Michroma.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55E0E3271BAC6E6E0048C51E /* Michroma.ttf */; };
+		55E0E32C1BAC71510048C51E /* PROMESH-Two.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55E0E32A1BAC71510048C51E /* PROMESH-Two.ttf */; };
+		55E0E32E1BAC71510048C51E /* PROMESH-TwoFast.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55E0E32B1BAC71510048C51E /* PROMESH-TwoFast.ttf */; };
+		55E0E3321BAC73F40048C51E /* PHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E0E3311BAC73F40048C51E /* PHTextField.m */; };
+		55E0E3361BAC7D900048C51E /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E0E3351BAC7D900048C51E /* SignUpViewController.m */; };
+		55E0E33A1BAC9F350048C51E /* GVUserDefaults+PrepHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E0E3391BAC9F350048C51E /* GVUserDefaults+PrepHero.m */; };
+		55E708F81BB9CE81005B7D0E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E708F71BB9CE81005B7D0E /* CoreLocation.framework */; };
+		55E708FB1BB9E4EF005B7D0E /* UINavigationController+StatusBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E708FA1BB9E4EF005B7D0E /* UINavigationController+StatusBarStyle.m */; };
+		603046897D8B8265A4E18654 /* libPods-PrepHero.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC8E2E478663962F71E4634 /* libPods-PrepHero.a */; };
+		844602441C6C3AED004D4669 /* PHRowVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844602421C6C3AED004D4669 /* PHRowVideoViewController.m */; };
+		844602451C6C3AED004D4669 /* PHRowVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844602431C6C3AED004D4669 /* PHRowVideoViewController.xib */; };
+		844B5CDA1C57C3C5006B73C1 /* PHSavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B5CD81C57C3C5006B73C1 /* PHSavedViewController.m */; };
+		844B5CDB1C57C3C5006B73C1 /* PHSavedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B5CD91C57C3C5006B73C1 /* PHSavedViewController.xib */; };
+		844B5CDF1C57E51F006B73C1 /* PHNewWarningTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B5CDD1C57E51F006B73C1 /* PHNewWarningTableViewCell.m */; };
+		844B5CE01C57E51F006B73C1 /* PHNewWarningTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B5CDE1C57E51F006B73C1 /* PHNewWarningTableViewCell.xib */; };
+		844B5CE41C57EABC006B73C1 /* PHInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844B5CE21C57EABC006B73C1 /* PHInfoTableViewCell.m */; };
+		844B5CE51C57EABC006B73C1 /* PHInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B5CE31C57EABC006B73C1 /* PHInfoTableViewCell.xib */; };
+		845015B11C6530D800968B2F /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845015AA1C6530D800968B2F /* TPKeyboardAvoidingCollectionView.m */; };
+		845015B21C6530D800968B2F /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845015AC1C6530D800968B2F /* TPKeyboardAvoidingScrollView.m */; };
+		845015B31C6530D800968B2F /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845015AE1C6530D800968B2F /* TPKeyboardAvoidingTableView.m */; };
+		845015B41C6530D800968B2F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 845015B01C6530D800968B2F /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		848AB53E1C578EDE000C9DB1 /* PHSavedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AB53C1C578EDE000C9DB1 /* PHSavedTableViewCell.m */; };
+		848AB53F1C578EDE000C9DB1 /* PHSavedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848AB53D1C578EDE000C9DB1 /* PHSavedTableViewCell.xib */; };
+		84DACC091C4974D900F3FA7E /* Checkmark@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACBF51C4974D900F3FA7E /* Checkmark@1x.png */; };
+		84DACC0C1C4974D900F3FA7E /* Circle100.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACBF81C4974D900F3FA7E /* Circle100.png */; };
+		84DACC0D1C4974D900F3FA7E /* Delete Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACBF91C4974D900F3FA7E /* Delete Filled.png */; };
+		84DACC0E1C4974D900F3FA7E /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACBFA1C4974D900F3FA7E /* Delete.png */; };
+		84DACC0F1C4974D900F3FA7E /* Delete@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACBFB1C4974D900F3FA7E /* Delete@1x.png */; };
+		84DACC121C4974D900F3FA7E /* Pause Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACBFE1C4974D900F3FA7E /* Pause Filled.png */; };
+		84DACC131C4974D900F3FA7E /* Pencil Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACBFF1C4974D900F3FA7E /* Pencil Filled.png */; };
+		84DACC141C4974D900F3FA7E /* Play Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC001C4974D900F3FA7E /* Play Filled.png */; };
+		84DACC171C4974D900F3FA7E /* PlayBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC031C4974D900F3FA7E /* PlayBack.png */; };
+		84DACC181C4974D900F3FA7E /* Rewind Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC041C4974D900F3FA7E /* Rewind Filled.png */; };
+		84DACC191C4974D900F3FA7E /* Screenshot Filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC051C4974D900F3FA7E /* Screenshot Filled.png */; };
+		84DACC1B1C4974D900F3FA7E /* Twitter@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC071C4974D900F3FA7E /* Twitter@1x.png */; };
+		84DACC431C49816F00F3FA7E /* PHClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DACC411C49816F00F3FA7E /* PHClipViewController.m */; };
+		84DACC441C49816F00F3FA7E /* PHClipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC421C49816F00F3FA7E /* PHClipViewController.xib */; };
+		84DACC481C4981E000F3FA7E /* PHClipEditerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DACC461C4981E000F3FA7E /* PHClipEditerViewController.m */; };
+		84DACC491C4981E000F3FA7E /* PHClipEditerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC471C4981E000F3FA7E /* PHClipEditerViewController.xib */; };
+		84DACC581C49826E00F3FA7E /* PHRowVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DACC4E1C49826E00F3FA7E /* PHRowVideoTableViewCell.m */; };
+		84DACC591C49826E00F3FA7E /* PHRowVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC4F1C49826E00F3FA7E /* PHRowVideoTableViewCell.xib */; };
+		84DACC5C1C49826E00F3FA7E /* PHVideosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DACC541C49826E00F3FA7E /* PHVideosViewController.m */; };
+		84DACC5D1C49826E00F3FA7E /* PHVideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84DACC551C49826E00F3FA7E /* PHVideosViewController.xib */; };
+		84E453EC1C553C660095A0CC /* PHVideoClipTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E453EA1C553C660095A0CC /* PHVideoClipTableViewCell.m */; };
+		84E453ED1C553C660095A0CC /* PHVideoClipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E453EB1C553C660095A0CC /* PHVideoClipTableViewCell.xib */; };
+		84E453F21C557DE10095A0CC /* PHHighlightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E453F01C557DE10095A0CC /* PHHighlightsViewController.m */; };
+		84E453F31C557DE10095A0CC /* PHHighlightsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E453F11C557DE10095A0CC /* PHHighlightsViewController.xib */; };
+		84E453F81C568D4D0095A0CC /* PHClipVideoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E453F71C568D4D0095A0CC /* PHClipVideoInfo.m */; };
+		84EA892C1C54FF8900054DE2 /* PHRowSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA892A1C54FF8900054DE2 /* PHRowSaveViewController.m */; };
+		84EA892D1C54FF8900054DE2 /* PHRowSaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EA892B1C54FF8900054DE2 /* PHRowSaveViewController.xib */; };
+		84EB4B831C55232500C6D3CD /* PHVideoNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EB4B811C55232500C6D3CD /* PHVideoNewViewController.m */; };
+		84EB4B841C55232500C6D3CD /* PHVideoNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EB4B821C55232500C6D3CD /* PHVideoNewViewController.xib */; };
+		84EDA3311C6D3BAB00CFA19E /* PHPlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EDA32F1C6D3BAB00CFA19E /* PHPlayVideoViewController.m */; };
+		84EDA3321C6D3BAB00CFA19E /* PHPlayVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EDA3301C6D3BAB00CFA19E /* PHPlayVideoViewController.xib */; };
+		84F763A61C59F60B002265E7 /* PHVideoVideosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F763A41C59F60B002265E7 /* PHVideoVideosTableViewCell.m */; };
+		84F763A71C59F60B002265E7 /* PHVideoVideosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F763A51C59F60B002265E7 /* PHVideoVideosTableViewCell.xib */; };
+		84F763AB1C5A03E3002265E7 /* PHVideoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F763A91C5A03E3002265E7 /* PHVideoEditViewController.m */; };
+		84F763AC1C5A03E3002265E7 /* PHVideoEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F763AA1C5A03E3002265E7 /* PHVideoEditViewController.xib */; };
+		84F763B41C5A12FE002265E7 /* Arrow_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F763B21C5A12FE002265E7 /* Arrow_Down.png */; };
+		84F763B51C5A12FE002265E7 /* Arrow_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F763B31C5A12FE002265E7 /* Arrow_Up.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A14EA7C1BED3C5E007627A3 /* PHEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHEncoder.h; path = Library/VideoCapture/PHEncoder.h; sourceTree = SOURCE_ROOT; };
+		0A14EA7D1BED3C5E007627A3 /* PHEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHEncoder.m; path = Library/VideoCapture/PHEncoder.m; sourceTree = SOURCE_ROOT; };
+		0A23D2C9C10157DF8975597F /* Pods-PrepHero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrepHero.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrepHero/Pods-PrepHero.debug.xcconfig"; sourceTree = "<group>"; };
+		5500B1CD1C20C54300321AA7 /* PHVideoSegmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHVideoSegmentsViewController.h; path = Classes/PHVideoSegmentsViewController.h; sourceTree = SOURCE_ROOT; };
+		5500B1CE1C20C54300321AA7 /* PHVideoSegmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHVideoSegmentsViewController.m; path = Classes/PHVideoSegmentsViewController.m; sourceTree = SOURCE_ROOT; };
+		5500B1E01C23879600321AA7 /* PHVideoMerge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHVideoMerge.h; path = Library/VideoCapture/PHVideoMerge.h; sourceTree = SOURCE_ROOT; };
+		5500B1E11C23879600321AA7 /* PHVideoMerge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHVideoMerge.m; path = Library/VideoCapture/PHVideoMerge.m; sourceTree = SOURCE_ROOT; };
+		5500B1E21C23879600321AA7 /* PHVideoSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHVideoSessionManager.h; path = Library/VideoCapture/PHVideoSessionManager.h; sourceTree = SOURCE_ROOT; };
+		5500B1E31C23879600321AA7 /* PHVideoSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHVideoSessionManager.m; path = Library/VideoCapture/PHVideoSessionManager.m; sourceTree = SOURCE_ROOT; };
+		5500B1E61C23880F00321AA7 /* PHRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRecorder.h; path = Library/VideoCapture/PHRecorder.h; sourceTree = SOURCE_ROOT; };
+		5500B1E71C23880F00321AA7 /* PHRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRecorder.m; path = Library/VideoCapture/PHRecorder.m; sourceTree = SOURCE_ROOT; };
+		551877541B30D9FE00F9D5D9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		55373E201BB0AB7B002D057D /* ProfileHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileHeadView.h; path = Classes/ProfileHeadView.h; sourceTree = SOURCE_ROOT; };
+		55373E211BB0AB7B002D057D /* ProfileHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileHeadView.m; path = Classes/ProfileHeadView.m; sourceTree = SOURCE_ROOT; };
+		554A77371B3B392100F94C3E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		554B89021BB210B000ADC19B /* PHForcedOrientationNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHForcedOrientationNavController.h; path = Classes/PHForcedOrientationNavController.h; sourceTree = SOURCE_ROOT; };
+		554B89031BB210B000ADC19B /* PHForcedOrientationNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHForcedOrientationNavController.m; path = Classes/PHForcedOrientationNavController.m; sourceTree = SOURCE_ROOT; };
+		554B89051BB34A6400ADC19B /* PrepHero 1.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PrepHero 1.2.xcdatamodel"; sourceTree = "<group>"; };
+		554B89091BB34ADE00ADC19B /* Video+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Video+CoreDataProperties.h"; path = "Classes/Video+CoreDataProperties.h"; sourceTree = "<group>"; };
+		554B890A1BB34ADE00ADC19B /* Video+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Video+CoreDataProperties.m"; path = "Classes/Video+CoreDataProperties.m"; sourceTree = "<group>"; };
+		554B890B1BB34ADE00ADC19B /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Video.h; path = Classes/Video.h; sourceTree = "<group>"; };
+		554B890C1BB34ADE00ADC19B /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Video.m; path = Classes/Video.m; sourceTree = "<group>"; };
+		554B890F1BB3542700ADC19B /* PHActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHActionButton.h; path = Classes/PHActionButton.h; sourceTree = "<group>"; };
+		554B89101BB3542700ADC19B /* PHActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHActionButton.m; path = Classes/PHActionButton.m; sourceTree = "<group>"; };
+		554F2AF71B33586A00563DCF /* PHPermissionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHPermissionsManager.h; path = Classes/PHPermissionsManager.h; sourceTree = "<group>"; };
+		554F2AF81B33586A00563DCF /* PHPermissionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHPermissionsManager.m; path = Classes/PHPermissionsManager.m; sourceTree = "<group>"; };
+		554F2AFA1B33595900563DCF /* PHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFileManager.h; path = Classes/PHFileManager.h; sourceTree = "<group>"; };
+		554F2AFB1B33595900563DCF /* PHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFileManager.m; path = Classes/PHFileManager.m; sourceTree = "<group>"; };
+		554F2B031B335CFA00563DCF /* PHCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCaptureViewController.h; path = Classes/PHCaptureViewController.h; sourceTree = SOURCE_ROOT; };
+		554F2B041B335CFA00563DCF /* PHCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCaptureViewController.m; path = Classes/PHCaptureViewController.m; sourceTree = SOURCE_ROOT; };
+		5550FC601B6B27370013DF82 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		555140D41B70176D00766E26 /* PHProfileImageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHProfileImageNode.h; path = Classes/PHProfileImageNode.h; sourceTree = SOURCE_ROOT; };
+		555140D51B70176D00766E26 /* PHProfileImageNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHProfileImageNode.m; path = Classes/PHProfileImageNode.m; sourceTree = SOURCE_ROOT; };
+		5551C5931B309B5A00533E83 /* UIImage+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Helper.h"; path = "Categories/UIImage+Helper.h"; sourceTree = "<group>"; };
+		5551C5941B309B5A00533E83 /* UIImage+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Helper.m"; path = "Categories/UIImage+Helper.m"; sourceTree = "<group>"; };
+		555AAF931B58452D00835B15 /* PrepHero-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PrepHero-Prefix.pch"; sourceTree = "<group>"; };
+		555AAF941B59A89700835B15 /* PHConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHConstants.h; sourceTree = "<group>"; };
+		555AAF951B59A8C300835B15 /* PHUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHUtil.h; path = Classes/PHUtil.h; sourceTree = "<group>"; };
+		555AAF961B59A8C300835B15 /* PHUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHUtil.m; path = Classes/PHUtil.m; sourceTree = "<group>"; };
+		557391EA1B41F100000B80CC /* PHMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHMainTabBarController.h; path = Classes/PHMainTabBarController.h; sourceTree = SOURCE_ROOT; };
+		557391EB1B41F100000B80CC /* PHMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHMainTabBarController.m; path = Classes/PHMainTabBarController.m; sourceTree = SOURCE_ROOT; };
+		557391ED1B41F5A3000B80CC /* PHSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHSettingsViewController.h; path = Classes/PHSettingsViewController.h; sourceTree = SOURCE_ROOT; };
+		557391EE1B41F5A3000B80CC /* PHSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHSettingsViewController.m; path = Classes/PHSettingsViewController.m; sourceTree = SOURCE_ROOT; };
+		557391F11B42F4A4000B80CC /* PHVideoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHVideoPickerViewController.h; path = Classes/PHVideoPickerViewController.h; sourceTree = SOURCE_ROOT; };
+		557391F21B42F4A4000B80CC /* PHVideoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHVideoPickerViewController.m; path = Classes/PHVideoPickerViewController.m; sourceTree = SOURCE_ROOT; };
+		5576D8671BA9F324002B2C9C /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		5576D8691BAA0062002B2C9C /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInViewController.h; path = Classes/LogInViewController.h; sourceTree = SOURCE_ROOT; };
+		5576D86A1BAA0062002B2C9C /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogInViewController.m; path = Classes/LogInViewController.m; sourceTree = SOURCE_ROOT; };
+		559F1EF81BAA15E6004EC89B /* PrepHero 1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PrepHero 1.1.xcdatamodel"; sourceTree = "<group>"; };
+		559F1EFF1BAA191A004EC89B /* VideoMigiration.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = VideoMigiration.xcmappingmodel; sourceTree = "<group>"; };
+		559F1F011BAA1988004EC89B /* VideoTransformationPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoTransformationPolicy.h; path = Classes/VideoTransformationPolicy.h; sourceTree = "<group>"; };
+		559F1F021BAA1988004EC89B /* VideoTransformationPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoTransformationPolicy.m; path = Classes/VideoTransformationPolicy.m; sourceTree = "<group>"; };
+		55AB56F41B851FB8002F4401 /* PHTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHTutorialViewController.h; path = Classes/PHTutorialViewController.h; sourceTree = SOURCE_ROOT; };
+		55AB56F51B851FB8002F4401 /* PHTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHTutorialViewController.m; path = Classes/PHTutorialViewController.m; sourceTree = SOURCE_ROOT; };
+		55AB56F71B8522A4002F4401 /* PHPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHPageViewController.h; path = Classes/PHPageViewController.h; sourceTree = SOURCE_ROOT; };
+		55AB56F81B8522A4002F4401 /* PHPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHPageViewController.m; path = Classes/PHPageViewController.m; sourceTree = SOURCE_ROOT; };
+		55B31AD31B55D698000234F5 /* PHLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHLocationManager.h; path = Classes/PHLocationManager.h; sourceTree = "<group>"; };
+		55B31AD41B55D698000234F5 /* PHLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHLocationManager.m; path = Classes/PHLocationManager.m; sourceTree = "<group>"; };
+		55B96D3E1B2B6FC2004F8145 /* PrepHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrepHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B96D421B2B6FC2004F8145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PrepHero/Info.plist; sourceTree = "<group>"; };
+		55B96D431B2B6FC2004F8145 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55B96D451B2B6FC2004F8145 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		55B96D461B2B6FC2004F8145 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55B96D491B2B6FC2004F8145 /* PrepHero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PrepHero.xcdatamodel; sourceTree = "<group>"; };
+		55B96D4F1B2B6FC2004F8145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55B96D511B2B6FC2004F8145 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PrepHero/Images.xcassets; sourceTree = "<group>"; };
+		55B96D541B2B6FC2004F8145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		55B96D5F1B2B6FC2004F8145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55B96D601B2B6FC2004F8145 /* PrepHeroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrepHeroTests.m; sourceTree = "<group>"; };
+		55B96D751B2B8AC7004F8145 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "Categories/UIColor+Helper.h"; sourceTree = "<group>"; };
+		55B96D761B2B8AC7004F8145 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "Categories/UIColor+Helper.m"; sourceTree = "<group>"; };
+		55C8C5741B7D2346002A9CDF /* UIVIew+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIVIew+Helper.h"; path = "Categories/UIVIew+Helper.h"; sourceTree = "<group>"; };
+		55C8C5751B7D2346002A9CDF /* UIVIew+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIVIew+Helper.m"; path = "Categories/UIVIew+Helper.m"; sourceTree = "<group>"; };
+		55CFF6431B7E62AB00C8B55B /* PHCameraInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHCameraInfoView.h; path = Classes/PHCameraInfoView.h; sourceTree = SOURCE_ROOT; };
+		55CFF6441B7E62AB00C8B55B /* PHCameraInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHCameraInfoView.m; path = Classes/PHCameraInfoView.m; sourceTree = SOURCE_ROOT; };
+		55CFF6461B7E73F200C8B55B /* PHRecordingControlls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRecordingControlls.h; path = Classes/PHRecordingControlls.h; sourceTree = SOURCE_ROOT; };
+		55CFF6471B7E73F200C8B55B /* PHRecordingControlls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRecordingControlls.m; path = Classes/PHRecordingControlls.m; sourceTree = SOURCE_ROOT; };
+		55D5C8271B75560800E1158E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		55D898E61B4EF5CF0023C932 /* PHApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHApiClient.h; path = Classes/PHApiClient.h; sourceTree = SOURCE_ROOT; };
+		55D898E71B4EF5CF0023C932 /* PHApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHApiClient.m; path = Classes/PHApiClient.m; sourceTree = SOURCE_ROOT; };
+		55E0E3231BAB54A70048C51E /* PHPrimaryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHPrimaryButton.h; path = Classes/PHPrimaryButton.h; sourceTree = "<group>"; };
+		55E0E3241BAB54A70048C51E /* PHPrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHPrimaryButton.m; path = Classes/PHPrimaryButton.m; sourceTree = "<group>"; };
+		55E0E3271BAC6E6E0048C51E /* Michroma.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Michroma.ttf; path = Assets/michroma/Michroma.ttf; sourceTree = "<group>"; };
+		55E0E32A1BAC71510048C51E /* PROMESH-Two.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PROMESH-Two.ttf"; path = "Assets/PROMESH Two/PROMESH-Two.ttf"; sourceTree = "<group>"; };
+		55E0E32B1BAC71510048C51E /* PROMESH-TwoFast.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PROMESH-TwoFast.ttf"; path = "Assets/PROMESH Two/PROMESH-TwoFast.ttf"; sourceTree = "<group>"; };
+		55E0E3301BAC73F40048C51E /* PHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHTextField.h; path = Classes/PHTextField.h; sourceTree = "<group>"; };
+		55E0E3311BAC73F40048C51E /* PHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHTextField.m; path = Classes/PHTextField.m; sourceTree = "<group>"; };
+		55E0E3341BAC7D900048C51E /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = Classes/SignUpViewController.h; sourceTree = SOURCE_ROOT; };
+		55E0E3351BAC7D900048C51E /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = Classes/SignUpViewController.m; sourceTree = SOURCE_ROOT; };
+		55E0E3381BAC9F350048C51E /* GVUserDefaults+PrepHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GVUserDefaults+PrepHero.h"; path = "Classes/GVUserDefaults+PrepHero.h"; sourceTree = SOURCE_ROOT; };
+		55E0E3391BAC9F350048C51E /* GVUserDefaults+PrepHero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GVUserDefaults+PrepHero.m"; path = "Classes/GVUserDefaults+PrepHero.m"; sourceTree = SOURCE_ROOT; };
+		55E708F71BB9CE81005B7D0E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55E708F91BB9E4EF005B7D0E /* UINavigationController+StatusBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+StatusBarStyle.h"; path = "Classes/UINavigationController+StatusBarStyle.h"; sourceTree = "<group>"; };
+		55E708FA1BB9E4EF005B7D0E /* UINavigationController+StatusBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+StatusBarStyle.m"; path = "Classes/UINavigationController+StatusBarStyle.m"; sourceTree = "<group>"; };
+		844602411C6C3AED004D4669 /* PHRowVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRowVideoViewController.h; path = Classes/PHRowVideoViewController.h; sourceTree = SOURCE_ROOT; };
+		844602421C6C3AED004D4669 /* PHRowVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRowVideoViewController.m; path = Classes/PHRowVideoViewController.m; sourceTree = SOURCE_ROOT; };
+		844602431C6C3AED004D4669 /* PHRowVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHRowVideoViewController.xib; path = Classes/PHRowVideoViewController.xib; sourceTree = SOURCE_ROOT; };
+		844B5CD71C57C3C5006B73C1 /* PHSavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHSavedViewController.h; path = Classes/PHSavedViewController.h; sourceTree = SOURCE_ROOT; };
+		844B5CD81C57C3C5006B73C1 /* PHSavedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHSavedViewController.m; path = Classes/PHSavedViewController.m; sourceTree = SOURCE_ROOT; };
+		844B5CD91C57C3C5006B73C1 /* PHSavedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHSavedViewController.xib; path = Classes/PHSavedViewController.xib; sourceTree = SOURCE_ROOT; };
+		844B5CDC1C57E51F006B73C1 /* PHNewWarningTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHNewWarningTableViewCell.h; path = Classes/PHNewWarningTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		844B5CDD1C57E51F006B73C1 /* PHNewWarningTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHNewWarningTableViewCell.m; path = Classes/PHNewWarningTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		844B5CDE1C57E51F006B73C1 /* PHNewWarningTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHNewWarningTableViewCell.xib; path = Classes/PHNewWarningTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		844B5CE11C57EABC006B73C1 /* PHInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHInfoTableViewCell.h; path = Classes/PHInfoTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		844B5CE21C57EABC006B73C1 /* PHInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHInfoTableViewCell.m; path = Classes/PHInfoTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		844B5CE31C57EABC006B73C1 /* PHInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHInfoTableViewCell.xib; path = Classes/PHInfoTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		845015A91C6530D800968B2F /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		845015AA1C6530D800968B2F /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		845015AB1C6530D800968B2F /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		845015AC1C6530D800968B2F /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		845015AD1C6530D800968B2F /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		845015AE1C6530D800968B2F /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		845015AF1C6530D800968B2F /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		845015B01C6530D800968B2F /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		848AB53B1C578EDE000C9DB1 /* PHSavedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHSavedTableViewCell.h; path = Classes/PHSavedTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		848AB53C1C578EDE000C9DB1 /* PHSavedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHSavedTableViewCell.m; path = Classes/PHSavedTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		848AB53D1C578EDE000C9DB1 /* PHSavedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHSavedTableViewCell.xib; path = Classes/PHSavedTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		84DACBF51C4974D900F3FA7E /* Checkmark@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Checkmark@1x.png"; path = "Image/Checkmark@1x.png"; sourceTree = SOURCE_ROOT; };
+		84DACBF81C4974D900F3FA7E /* Circle100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Circle100.png; path = Image/Circle100.png; sourceTree = SOURCE_ROOT; };
+		84DACBF91C4974D900F3FA7E /* Delete Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Delete Filled.png"; path = "Image/Delete Filled.png"; sourceTree = SOURCE_ROOT; };
+		84DACBFA1C4974D900F3FA7E /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Delete.png; path = Image/Delete.png; sourceTree = SOURCE_ROOT; };
+		84DACBFB1C4974D900F3FA7E /* Delete@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Delete@1x.png"; path = "Image/Delete@1x.png"; sourceTree = SOURCE_ROOT; };
+		84DACBFE1C4974D900F3FA7E /* Pause Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pause Filled.png"; path = "Image/Pause Filled.png"; sourceTree = SOURCE_ROOT; };
+		84DACBFF1C4974D900F3FA7E /* Pencil Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pencil Filled.png"; path = "Image/Pencil Filled.png"; sourceTree = SOURCE_ROOT; };
+		84DACC001C4974D900F3FA7E /* Play Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Play Filled.png"; path = "Image/Play Filled.png"; sourceTree = SOURCE_ROOT; };
+		84DACC031C4974D900F3FA7E /* PlayBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayBack.png; path = Image/PlayBack.png; sourceTree = SOURCE_ROOT; };
+		84DACC041C4974D900F3FA7E /* Rewind Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rewind Filled.png"; path = "Image/Rewind Filled.png"; sourceTree = SOURCE_ROOT; };
+		84DACC051C4974D900F3FA7E /* Screenshot Filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot Filled.png"; path = "Image/Screenshot Filled.png"; sourceTree = SOURCE_ROOT; };
+		84DACC071C4974D900F3FA7E /* Twitter@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twitter@1x.png"; path = "Image/Twitter@1x.png"; sourceTree = SOURCE_ROOT; };
+		84DACC401C49816F00F3FA7E /* PHClipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHClipViewController.h; path = Classes/PHClipViewController.h; sourceTree = SOURCE_ROOT; };
+		84DACC411C49816F00F3FA7E /* PHClipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHClipViewController.m; path = Classes/PHClipViewController.m; sourceTree = SOURCE_ROOT; };
+		84DACC421C49816F00F3FA7E /* PHClipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHClipViewController.xib; path = Classes/PHClipViewController.xib; sourceTree = SOURCE_ROOT; };
+		84DACC451C4981E000F3FA7E /* PHClipEditerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHClipEditerViewController.h; path = Classes/PHClipEditerViewController.h; sourceTree = SOURCE_ROOT; };
+		84DACC461C4981E000F3FA7E /* PHClipEditerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHClipEditerViewController.m; path = Classes/PHClipEditerViewController.m; sourceTree = SOURCE_ROOT; };
+		84DACC471C4981E000F3FA7E /* PHClipEditerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHClipEditerViewController.xib; path = Classes/PHClipEditerViewController.xib; sourceTree = SOURCE_ROOT; };
+		84DACC4D1C49826E00F3FA7E /* PHRowVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHRowVideoTableViewCell.h; path = Classes/PHRowVideoTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		84DACC4E1C49826E00F3FA7E /* PHRowVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHRowVideoTableViewCell.m; path = Classes/PHRowVideoTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		84DACC4F1C49826E00F3FA7E /* PHRowVideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHRowVideoTableViewCell.xib; path = Classes/PHRowVideoTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		84DACC531C49826E00F3FA7E /* PHVideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHVideosViewController.h; path = Classes/PHVideosViewController.h; sourceTree = SOURCE_ROOT; };
+		84DACC541C49826E00F3FA7E /* PHVideosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHVideosViewController.m; path = Classes/PHVideosViewController.m; sourceTree = SOURCE_ROOT; };
+		84DACC551C49826E00F3FA7E /* PHVideosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHVideosViewController.xib; path = Classes/PHVideosViewController.xib; sourceTree = SOURCE_ROOT; };
+		84E453E91C553C660095A0CC /* PHVideoClipTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHVideoClipTableViewCell.h; path = Classes/PHVideoClipTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		84E453EA1C553C660095A0CC /* PHVideoClipTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHVideoClipTableViewCell.m; path = Classes/PHVideoClipTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		84E453EB1C553C660095A0CC /* PHVideoClipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHVideoClipTableViewCell.xib; path = Classes/PHVideoClipTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		84E453EF1C557DE10095A0CC /* PHHighlightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHHighlightsViewController.h; path = Classes/PHHighlightsViewController.h; sourceTree = SOURCE_ROOT; };
+		84E453F01C557DE10095A0CC /* PHHighlightsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHHighlightsViewController.m; path = Classes/PHHighlightsViewController.m; sourceTree = SOURCE_ROOT; };
+		84E453F11C557DE10095A0CC /* PHHighlightsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHHighlightsViewController.xib; path = Classes/PHHighlightsViewController.xib; sourceTree = SOURCE_ROOT; };
+		84E453F61C568D4D0095A0CC /* PHClipVideoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHClipVideoInfo.h; path = Classes/PHClipVideoInfo.h; sourceTree = "<group>"; };
+		84E453F71C568D4D0095A0CC /* PHClipVideoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHClipVideoInfo.m; path = Classes/PHClipVideoInfo.m; sourceTree = "<group>"; };
+		84EA89291C54FF8900054DE2 /* PHRowSaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHRowSaveViewController.h; sourceTree = "<group>"; };
+		84EA892A1C54FF8900054DE2 /* PHRowSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHRowSaveViewController.m; sourceTree = "<group>"; };
+		84EA892B1C54FF8900054DE2 /* PHRowSaveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHRowSaveViewController.xib; sourceTree = "<group>"; };
+		84EB4B801C55232500C6D3CD /* PHVideoNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHVideoNewViewController.h; path = Classes/PHVideoNewViewController.h; sourceTree = SOURCE_ROOT; };
+		84EB4B811C55232500C6D3CD /* PHVideoNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHVideoNewViewController.m; path = Classes/PHVideoNewViewController.m; sourceTree = SOURCE_ROOT; };
+		84EB4B821C55232500C6D3CD /* PHVideoNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHVideoNewViewController.xib; path = Classes/PHVideoNewViewController.xib; sourceTree = SOURCE_ROOT; };
+		84EDA32E1C6D3BAB00CFA19E /* PHPlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHPlayVideoViewController.h; path = Classes/PHPlayVideoViewController.h; sourceTree = SOURCE_ROOT; };
+		84EDA32F1C6D3BAB00CFA19E /* PHPlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHPlayVideoViewController.m; path = Classes/PHPlayVideoViewController.m; sourceTree = SOURCE_ROOT; };
+		84EDA3301C6D3BAB00CFA19E /* PHPlayVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHPlayVideoViewController.xib; path = Classes/PHPlayVideoViewController.xib; sourceTree = SOURCE_ROOT; };
+		84F763A31C59F60B002265E7 /* PHVideoVideosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHVideoVideosTableViewCell.h; path = Classes/PHVideoVideosTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		84F763A41C59F60B002265E7 /* PHVideoVideosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHVideoVideosTableViewCell.m; path = Classes/PHVideoVideosTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		84F763A51C59F60B002265E7 /* PHVideoVideosTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHVideoVideosTableViewCell.xib; path = Classes/PHVideoVideosTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		84F763A81C5A03E3002265E7 /* PHVideoEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHVideoEditViewController.h; sourceTree = "<group>"; };
+		84F763A91C5A03E3002265E7 /* PHVideoEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHVideoEditViewController.m; sourceTree = "<group>"; };
+		84F763AA1C5A03E3002265E7 /* PHVideoEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHVideoEditViewController.xib; sourceTree = "<group>"; };
+		84F763B21C5A12FE002265E7 /* Arrow_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Arrow_Down.png; path = Image/Arrow_Down.png; sourceTree = SOURCE_ROOT; };
+		84F763B31C5A12FE002265E7 /* Arrow_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Arrow_Up.png; path = Image/Arrow_Up.png; sourceTree = SOURCE_ROOT; };
+		9BA54E8364B480DD8D30625E /* Pods-PrepHero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrepHero.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrepHero/Pods-PrepHero.release.xcconfig"; sourceTree = "<group>"; };
+		9EC8E2E478663962F71E4634 /* libPods-PrepHero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrepHero.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55B96D3B1B2B6FC2004F8145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E708F81BB9CE81005B7D0E /* CoreLocation.framework in Frameworks */,
+				5576D8681BA9F324002B2C9C /* SafariServices.framework in Frameworks */,
+				55D5C8281B75560800E1158E /* SpriteKit.framework in Frameworks */,
+				5550FC611B6B27370013DF82 /* MediaPlayer.framework in Frameworks */,
+				551877551B30D9FE00F9D5D9 /* AVFoundation.framework in Frameworks */,
+				603046897D8B8265A4E18654 /* libPods-PrepHero.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A0B669D266553758716B2D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A23D2C9C10157DF8975597F /* Pods-PrepHero.debug.xcconfig */,
+				9BA54E8364B480DD8D30625E /* Pods-PrepHero.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		554F2AF61B33581E00563DCF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				554F2AF71B33586A00563DCF /* PHPermissionsManager.h */,
+				554F2AF81B33586A00563DCF /* PHPermissionsManager.m */,
+				554F2AFA1B33595900563DCF /* PHFileManager.h */,
+				554F2AFB1B33595900563DCF /* PHFileManager.m */,
+				55B31AD31B55D698000234F5 /* PHLocationManager.h */,
+				55B31AD41B55D698000234F5 /* PHLocationManager.m */,
+				555AAF941B59A89700835B15 /* PHConstants.h */,
+				555AAF951B59A8C300835B15 /* PHUtil.h */,
+				555AAF961B59A8C300835B15 /* PHUtil.m */,
+				55E0E3231BAB54A70048C51E /* PHPrimaryButton.h */,
+				55E0E3241BAB54A70048C51E /* PHPrimaryButton.m */,
+				55E0E3301BAC73F40048C51E /* PHTextField.h */,
+				55E0E3311BAC73F40048C51E /* PHTextField.m */,
+				554B890F1BB3542700ADC19B /* PHActionButton.h */,
+				554B89101BB3542700ADC19B /* PHActionButton.m */,
+				84E453F61C568D4D0095A0CC /* PHClipVideoInfo.h */,
+				84E453F71C568D4D0095A0CC /* PHClipVideoInfo.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		554F2B081B349B2D00563DCF /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				5500B1E01C23879600321AA7 /* PHVideoMerge.h */,
+				5500B1E11C23879600321AA7 /* PHVideoMerge.m */,
+				5500B1E21C23879600321AA7 /* PHVideoSessionManager.h */,
+				5500B1E31C23879600321AA7 /* PHVideoSessionManager.m */,
+				5500B1E61C23880F00321AA7 /* PHRecorder.h */,
+				5500B1E71C23880F00321AA7 /* PHRecorder.m */,
+				0A14EA7C1BED3C5E007627A3 /* PHEncoder.h */,
+				0A14EA7D1BED3C5E007627A3 /* PHEncoder.m */,
+				554F2B031B335CFA00563DCF /* PHCaptureViewController.h */,
+				554F2B041B335CFA00563DCF /* PHCaptureViewController.m */,
+				55CFF6431B7E62AB00C8B55B /* PHCameraInfoView.h */,
+				55CFF6441B7E62AB00C8B55B /* PHCameraInfoView.m */,
+				55CFF6461B7E73F200C8B55B /* PHRecordingControlls.h */,
+				55CFF6471B7E73F200C8B55B /* PHRecordingControlls.m */,
+			);
+			name = VideoCapture;
+			sourceTree = "<group>";
+		};
+		554F2B091B349B9100563DCF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				557391ED1B41F5A3000B80CC /* PHSettingsViewController.h */,
+				557391EE1B41F5A3000B80CC /* PHSettingsViewController.m */,
+				555140D41B70176D00766E26 /* PHProfileImageNode.h */,
+				555140D51B70176D00766E26 /* PHProfileImageNode.m */,
+				55E0E3381BAC9F350048C51E /* GVUserDefaults+PrepHero.h */,
+				55E0E3391BAC9F350048C51E /* GVUserDefaults+PrepHero.m */,
+				55373E201BB0AB7B002D057D /* ProfileHeadView.h */,
+				55373E211BB0AB7B002D057D /* ProfileHeadView.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		554F2B0D1B34A3E200563DCF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				55E0E3341BAC7D900048C51E /* SignUpViewController.h */,
+				55E0E3351BAC7D900048C51E /* SignUpViewController.m */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		554F2B0E1B34A3EA00563DCF /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				5576D8691BAA0062002B2C9C /* LogInViewController.h */,
+				5576D86A1BAA0062002B2C9C /* LogInViewController.m */,
+			);
+			name = LogIn;
+			sourceTree = "<group>";
+		};
+		557391E61B41F061000B80CC /* VideoEdit */ = {
+			isa = PBXGroup;
+			children = (
+				84E453EE1C557D380095A0CC /* HighlightsVideoVC */,
+				84C035D01C54AC94005DCA44 /* RowClipsVC */,
+				84C035CF1C54AC67005DCA44 /* VideosVC */,
+				5500B1CD1C20C54300321AA7 /* PHVideoSegmentsViewController.h */,
+				5500B1CE1C20C54300321AA7 /* PHVideoSegmentsViewController.m */,
+				84EDA32E1C6D3BAB00CFA19E /* PHPlayVideoViewController.h */,
+				84EDA32F1C6D3BAB00CFA19E /* PHPlayVideoViewController.m */,
+				84EDA3301C6D3BAB00CFA19E /* PHPlayVideoViewController.xib */,
+			);
+			name = VideoEdit;
+			sourceTree = "<group>";
+		};
+		557391F01B42F405000B80CC /* VideoImport */ = {
+			isa = PBXGroup;
+			children = (
+				557391F11B42F4A4000B80CC /* PHVideoPickerViewController.h */,
+				557391F21B42F4A4000B80CC /* PHVideoPickerViewController.m */,
+			);
+			name = VideoImport;
+			sourceTree = "<group>";
+		};
+		557391F41B42FA7C000B80CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				554B89091BB34ADE00ADC19B /* Video+CoreDataProperties.h */,
+				554B890A1BB34ADE00ADC19B /* Video+CoreDataProperties.m */,
+				554B890B1BB34ADE00ADC19B /* Video.h */,
+				554B890C1BB34ADE00ADC19B /* Video.m */,
+				55B96D481B2B6FC2004F8145 /* PrepHero.xcdatamodeld */,
+				559F1EFF1BAA191A004EC89B /* VideoMigiration.xcmappingmodel */,
+				559F1F011BAA1988004EC89B /* VideoTransformationPolicy.h */,
+				559F1F021BAA1988004EC89B /* VideoTransformationPolicy.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		55AB56F31B851BB5002F4401 /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				55AB56F41B851FB8002F4401 /* PHTutorialViewController.h */,
+				55AB56F51B851FB8002F4401 /* PHTutorialViewController.m */,
+				55AB56F71B8522A4002F4401 /* PHPageViewController.h */,
+				55AB56F81B8522A4002F4401 /* PHPageViewController.m */,
+			);
+			name = WalkThrough;
+			sourceTree = "<group>";
+		};
+		55B96D351B2B6FC2004F8145 = {
+			isa = PBXGroup;
+			children = (
+				55E0E3261BAC6E290048C51E /* Resources */,
+				557391F41B42FA7C000B80CC /* Models */,
+				554F2AF61B33581E00563DCF /* Common */,
+				55B96D731B2B8943004F8145 /* Categories */,
+				55B96D401B2B6FC2004F8145 /* PrepHero */,
+				55B96D5D1B2B6FC2004F8145 /* PrepHeroTests */,
+				55B96D3F1B2B6FC2004F8145 /* Products */,
+				4A0B669D266553758716B2D2 /* Pods */,
+				B7F7191522DDBA5384A09C61 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		55B96D3F1B2B6FC2004F8145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55B96D3E1B2B6FC2004F8145 /* PrepHero.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55B96D401B2B6FC2004F8145 /* PrepHero */ = {
+			isa = PBXGroup;
+			children = (
+				845015A81C6530D800968B2F /* TPKeyboardAvoiding */,
+				55AB56F31B851BB5002F4401 /* WalkThrough */,
+				55D898E51B4EF5180023C932 /* APIClient */,
+				554F2B0D1B34A3E200563DCF /* SignUp */,
+				554F2B0E1B34A3EA00563DCF /* LogIn */,
+				557391E61B41F061000B80CC /* VideoEdit */,
+				554F2B081B349B2D00563DCF /* VideoCapture */,
+				557391F01B42F405000B80CC /* VideoImport */,
+				554F2B091B349B9100563DCF /* Settings */,
+				55B96D451B2B6FC2004F8145 /* AppDelegate.h */,
+				55B96D461B2B6FC2004F8145 /* AppDelegate.m */,
+				554B89021BB210B000ADC19B /* PHForcedOrientationNavController.h */,
+				554B89031BB210B000ADC19B /* PHForcedOrientationNavController.m */,
+				557391EA1B41F100000B80CC /* PHMainTabBarController.h */,
+				557391EB1B41F100000B80CC /* PHMainTabBarController.m */,
+				55B96D4E1B2B6FC2004F8145 /* Main.storyboard */,
+				55B96D531B2B6FC2004F8145 /* LaunchScreen.xib */,
+				55B96D411B2B6FC2004F8145 /* Supporting Files */,
+			);
+			path = PrepHero;
+			sourceTree = "<group>";
+		};
+		55B96D411B2B6FC2004F8145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55B96D431B2B6FC2004F8145 /* main.m */,
+				554A77371B3B392100F94C3E /* Settings.bundle */,
+				555AAF931B58452D00835B15 /* PrepHero-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55B96D5D1B2B6FC2004F8145 /* PrepHeroTests */ = {
+			isa = PBXGroup;
+			children = (
+				55B96D601B2B6FC2004F8145 /* PrepHeroTests.m */,
+				55B96D5E1B2B6FC2004F8145 /* Supporting Files */,
+			);
+			path = PrepHeroTests;
+			sourceTree = "<group>";
+		};
+		55B96D5E1B2B6FC2004F8145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55B96D5F1B2B6FC2004F8145 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55B96D731B2B8943004F8145 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				55C8C5741B7D2346002A9CDF /* UIVIew+Helper.h */,
+				55C8C5751B7D2346002A9CDF /* UIVIew+Helper.m */,
+				55B96D751B2B8AC7004F8145 /* UIColor+Helper.h */,
+				55B96D761B2B8AC7004F8145 /* UIColor+Helper.m */,
+				5551C5931B309B5A00533E83 /* UIImage+Helper.h */,
+				5551C5941B309B5A00533E83 /* UIImage+Helper.m */,
+				55E708F91BB9E4EF005B7D0E /* UINavigationController+StatusBarStyle.h */,
+				55E708FA1BB9E4EF005B7D0E /* UINavigationController+StatusBarStyle.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		55D898E51B4EF5180023C932 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				55D898E61B4EF5CF0023C932 /* PHApiClient.h */,
+				55D898E71B4EF5CF0023C932 /* PHApiClient.m */,
+			);
+			name = APIClient;
+			sourceTree = "<group>";
+		};
+		55E0E3261BAC6E290048C51E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				844B8E4D1C4643A500EAE510 /* Image */,
+				55B96D511B2B6FC2004F8145 /* Images.xcassets */,
+				55E0E3271BAC6E6E0048C51E /* Michroma.ttf */,
+				55E0E32A1BAC71510048C51E /* PROMESH-Two.ttf */,
+				55E0E32B1BAC71510048C51E /* PROMESH-TwoFast.ttf */,
+				55B96D421B2B6FC2004F8145 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		844B8E4D1C4643A500EAE510 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				84F763B21C5A12FE002265E7 /* Arrow_Down.png */,
+				84F763B31C5A12FE002265E7 /* Arrow_Up.png */,
+				84DACBF51C4974D900F3FA7E /* Checkmark@1x.png */,
+				84DACBF81C4974D900F3FA7E /* Circle100.png */,
+				84DACBF91C4974D900F3FA7E /* Delete Filled.png */,
+				84DACBFA1C4974D900F3FA7E /* Delete.png */,
+				84DACBFB1C4974D900F3FA7E /* Delete@1x.png */,
+				84DACBFE1C4974D900F3FA7E /* Pause Filled.png */,
+				84DACBFF1C4974D900F3FA7E /* Pencil Filled.png */,
+				84DACC001C4974D900F3FA7E /* Play Filled.png */,
+				84DACC031C4974D900F3FA7E /* PlayBack.png */,
+				84DACC041C4974D900F3FA7E /* Rewind Filled.png */,
+				84DACC051C4974D900F3FA7E /* Screenshot Filled.png */,
+				84DACC071C4974D900F3FA7E /* Twitter@1x.png */,
+			);
+			name = Image;
+			path = "../../test/PrepHero-iOS/Image";
+			sourceTree = "<group>";
+		};
+		845015A81C6530D800968B2F /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				845015A91C6530D800968B2F /* TPKeyboardAvoidingCollectionView.h */,
+				845015AA1C6530D800968B2F /* TPKeyboardAvoidingCollectionView.m */,
+				845015AB1C6530D800968B2F /* TPKeyboardAvoidingScrollView.h */,
+				845015AC1C6530D800968B2F /* TPKeyboardAvoidingScrollView.m */,
+				845015AD1C6530D800968B2F /* TPKeyboardAvoidingTableView.h */,
+				845015AE1C6530D800968B2F /* TPKeyboardAvoidingTableView.m */,
+				845015AF1C6530D800968B2F /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				845015B01C6530D800968B2F /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		84C035CF1C54AC67005DCA44 /* VideosVC */ = {
+			isa = PBXGroup;
+			children = (
+				84F763A81C5A03E3002265E7 /* PHVideoEditViewController.h */,
+				84F763A91C5A03E3002265E7 /* PHVideoEditViewController.m */,
+				84F763AA1C5A03E3002265E7 /* PHVideoEditViewController.xib */,
+				84DACC531C49826E00F3FA7E /* PHVideosViewController.h */,
+				84DACC541C49826E00F3FA7E /* PHVideosViewController.m */,
+				84DACC551C49826E00F3FA7E /* PHVideosViewController.xib */,
+				84EB4B801C55232500C6D3CD /* PHVideoNewViewController.h */,
+				84EB4B811C55232500C6D3CD /* PHVideoNewViewController.m */,
+				84EB4B821C55232500C6D3CD /* PHVideoNewViewController.xib */,
+				84E453E91C553C660095A0CC /* PHVideoClipTableViewCell.h */,
+				84E453EA1C553C660095A0CC /* PHVideoClipTableViewCell.m */,
+				84E453EB1C553C660095A0CC /* PHVideoClipTableViewCell.xib */,
+				848AB53B1C578EDE000C9DB1 /* PHSavedTableViewCell.h */,
+				848AB53C1C578EDE000C9DB1 /* PHSavedTableViewCell.m */,
+				848AB53D1C578EDE000C9DB1 /* PHSavedTableViewCell.xib */,
+				844B5CD71C57C3C5006B73C1 /* PHSavedViewController.h */,
+				844B5CD81C57C3C5006B73C1 /* PHSavedViewController.m */,
+				844B5CD91C57C3C5006B73C1 /* PHSavedViewController.xib */,
+				844B5CDC1C57E51F006B73C1 /* PHNewWarningTableViewCell.h */,
+				844B5CDD1C57E51F006B73C1 /* PHNewWarningTableViewCell.m */,
+				844B5CDE1C57E51F006B73C1 /* PHNewWarningTableViewCell.xib */,
+				844B5CE11C57EABC006B73C1 /* PHInfoTableViewCell.h */,
+				844B5CE21C57EABC006B73C1 /* PHInfoTableViewCell.m */,
+				844B5CE31C57EABC006B73C1 /* PHInfoTableViewCell.xib */,
+				84F763A31C59F60B002265E7 /* PHVideoVideosTableViewCell.h */,
+				84F763A41C59F60B002265E7 /* PHVideoVideosTableViewCell.m */,
+				84F763A51C59F60B002265E7 /* PHVideoVideosTableViewCell.xib */,
+			);
+			name = VideosVC;
+			sourceTree = "<group>";
+		};
+		84C035D01C54AC94005DCA44 /* RowClipsVC */ = {
+			isa = PBXGroup;
+			children = (
+				844602411C6C3AED004D4669 /* PHRowVideoViewController.h */,
+				844602421C6C3AED004D4669 /* PHRowVideoViewController.m */,
+				844602431C6C3AED004D4669 /* PHRowVideoViewController.xib */,
+				84DACC4D1C49826E00F3FA7E /* PHRowVideoTableViewCell.h */,
+				84DACC4E1C49826E00F3FA7E /* PHRowVideoTableViewCell.m */,
+				84DACC4F1C49826E00F3FA7E /* PHRowVideoTableViewCell.xib */,
+				84DACC451C4981E000F3FA7E /* PHClipEditerViewController.h */,
+				84DACC461C4981E000F3FA7E /* PHClipEditerViewController.m */,
+				84DACC471C4981E000F3FA7E /* PHClipEditerViewController.xib */,
+				84DACC401C49816F00F3FA7E /* PHClipViewController.h */,
+				84DACC411C49816F00F3FA7E /* PHClipViewController.m */,
+				84DACC421C49816F00F3FA7E /* PHClipViewController.xib */,
+				84EA89291C54FF8900054DE2 /* PHRowSaveViewController.h */,
+				84EA892A1C54FF8900054DE2 /* PHRowSaveViewController.m */,
+				84EA892B1C54FF8900054DE2 /* PHRowSaveViewController.xib */,
+			);
+			name = RowClipsVC;
+			sourceTree = "<group>";
+		};
+		84E453EE1C557D380095A0CC /* HighlightsVideoVC */ = {
+			isa = PBXGroup;
+			children = (
+				84E453EF1C557DE10095A0CC /* PHHighlightsViewController.h */,
+				84E453F01C557DE10095A0CC /* PHHighlightsViewController.m */,
+				84E453F11C557DE10095A0CC /* PHHighlightsViewController.xib */,
+			);
+			name = HighlightsVideoVC;
+			sourceTree = "<group>";
+		};
+		B7F7191522DDBA5384A09C61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55E708F71BB9CE81005B7D0E /* CoreLocation.framework */,
+				5576D8671BA9F324002B2C9C /* SafariServices.framework */,
+				55D5C8271B75560800E1158E /* SpriteKit.framework */,
+				5550FC601B6B27370013DF82 /* MediaPlayer.framework */,
+				551877541B30D9FE00F9D5D9 /* AVFoundation.framework */,
+				9EC8E2E478663962F71E4634 /* libPods-PrepHero.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55B96D3D1B2B6FC2004F8145 /* PrepHero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55B96D641B2B6FC2004F8145 /* Build configuration list for PBXNativeTarget "PrepHero" */;
+			buildPhases = (
+				1D3D3E99354E747453371791 /* Check Pods Manifest.lock */,
+				55B96D3A1B2B6FC2004F8145 /* Sources */,
+				55B96D3B1B2B6FC2004F8145 /* Frameworks */,
+				55B96D3C1B2B6FC2004F8145 /* Resources */,
+				434400703E9C36F04F28CCDA /* Copy Pods Resources */,
+				55CFF6491B83B1D300C8B55B /* ShellScript */,
+				DDE1BDAE611FAC16BC36AA6D /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrepHero;
+			productName = PrepHero;
+			productReference = 55B96D3E1B2B6FC2004F8145 /* PrepHero.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55B96D361B2B6FC2004F8145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PH;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "PrepHero, Inc.";
+				TargetAttributes = {
+					55B96D3D1B2B6FC2004F8145 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 89L79W5YZ6;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 55B96D391B2B6FC2004F8145 /* Build configuration list for PBXProject "PrepHero" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55B96D351B2B6FC2004F8145;
+			productRefGroup = 55B96D3F1B2B6FC2004F8145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55B96D3D1B2B6FC2004F8145 /* PrepHero */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55B96D3C1B2B6FC2004F8145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F763AC1C5A03E3002265E7 /* PHVideoEditViewController.xib in Resources */,
+				84DACC0C1C4974D900F3FA7E /* Circle100.png in Resources */,
+				84E453ED1C553C660095A0CC /* PHVideoClipTableViewCell.xib in Resources */,
+				84DACC191C4974D900F3FA7E /* Screenshot Filled.png in Resources */,
+				84DACC121C4974D900F3FA7E /* Pause Filled.png in Resources */,
+				84DACC0F1C4974D900F3FA7E /* Delete@1x.png in Resources */,
+				55E0E32C1BAC71510048C51E /* PROMESH-Two.ttf in Resources */,
+				554A77381B3B392100F94C3E /* Settings.bundle in Resources */,
+				84E453F31C557DE10095A0CC /* PHHighlightsViewController.xib in Resources */,
+				55E0E32E1BAC71510048C51E /* PROMESH-TwoFast.ttf in Resources */,
+				84F763A71C59F60B002265E7 /* PHVideoVideosTableViewCell.xib in Resources */,
+				84EB4B841C55232500C6D3CD /* PHVideoNewViewController.xib in Resources */,
+				84DACC591C49826E00F3FA7E /* PHRowVideoTableViewCell.xib in Resources */,
+				84F763B51C5A12FE002265E7 /* Arrow_Up.png in Resources */,
+				84DACC0D1C4974D900F3FA7E /* Delete Filled.png in Resources */,
+				844602451C6C3AED004D4669 /* PHRowVideoViewController.xib in Resources */,
+				84DACC5D1C49826E00F3FA7E /* PHVideosViewController.xib in Resources */,
+				55B96D501B2B6FC2004F8145 /* Main.storyboard in Resources */,
+				84F763B41C5A12FE002265E7 /* Arrow_Down.png in Resources */,
+				84DACC491C4981E000F3FA7E /* PHClipEditerViewController.xib in Resources */,
+				55B96D551B2B6FC2004F8145 /* LaunchScreen.xib in Resources */,
+				84EDA3321C6D3BAB00CFA19E /* PHPlayVideoViewController.xib in Resources */,
+				84EA892D1C54FF8900054DE2 /* PHRowSaveViewController.xib in Resources */,
+				84DACC181C4974D900F3FA7E /* Rewind Filled.png in Resources */,
+				84DACC0E1C4974D900F3FA7E /* Delete.png in Resources */,
+				84DACC441C49816F00F3FA7E /* PHClipViewController.xib in Resources */,
+				84DACC091C4974D900F3FA7E /* Checkmark@1x.png in Resources */,
+				84DACC141C4974D900F3FA7E /* Play Filled.png in Resources */,
+				55B96D521B2B6FC2004F8145 /* Images.xcassets in Resources */,
+				55E0E3281BAC6E6E0048C51E /* Michroma.ttf in Resources */,
+				844B5CE51C57EABC006B73C1 /* PHInfoTableViewCell.xib in Resources */,
+				84DACC1B1C4974D900F3FA7E /* Twitter@1x.png in Resources */,
+				844B5CDB1C57C3C5006B73C1 /* PHSavedViewController.xib in Resources */,
+				84DACC171C4974D900F3FA7E /* PlayBack.png in Resources */,
+				84DACC131C4974D900F3FA7E /* Pencil Filled.png in Resources */,
+				844B5CE01C57E51F006B73C1 /* PHNewWarningTableViewCell.xib in Resources */,
+				848AB53F1C578EDE000C9DB1 /* PHSavedTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D3D3E99354E747453371791 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		434400703E9C36F04F28CCDA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrepHero/Pods-PrepHero-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55CFF6491B83B1D300C8B55B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/Fabric/run 6303d524a8e0ce63db86827293d26331cbc32e2e 4b0e078366846b361d158096e19368f0f37734ea8c46e141dfc9ecda47de321e";
+		};
+		DDE1BDAE611FAC16BC36AA6D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrepHero/Pods-PrepHero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55B96D3A1B2B6FC2004F8145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DACC431C49816F00F3FA7E /* PHClipViewController.m in Sources */,
+				555140D61B70176D00766E26 /* PHProfileImageNode.m in Sources */,
+				55E0E3321BAC73F40048C51E /* PHTextField.m in Sources */,
+				55E0E33A1BAC9F350048C51E /* GVUserDefaults+PrepHero.m in Sources */,
+				55B96D471B2B6FC2004F8145 /* AppDelegate.m in Sources */,
+				845015B41C6530D800968B2F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				55CFF6451B7E62AB00C8B55B /* PHCameraInfoView.m in Sources */,
+				844B5CDA1C57C3C5006B73C1 /* PHSavedViewController.m in Sources */,
+				5500B1E81C23880F00321AA7 /* PHRecorder.m in Sources */,
+				5500B1CF1C20C54300321AA7 /* PHVideoSegmentsViewController.m in Sources */,
+				84E453F21C557DE10095A0CC /* PHHighlightsViewController.m in Sources */,
+				84F763AB1C5A03E3002265E7 /* PHVideoEditViewController.m in Sources */,
+				845015B31C6530D800968B2F /* TPKeyboardAvoidingTableView.m in Sources */,
+				55E708FB1BB9E4EF005B7D0E /* UINavigationController+StatusBarStyle.m in Sources */,
+				55B96D4A1B2B6FC2004F8145 /* PrepHero.xcdatamodeld in Sources */,
+				5576D86B1BAA0062002B2C9C /* LogInViewController.m in Sources */,
+				845015B11C6530D800968B2F /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				559F1F031BAA1988004EC89B /* VideoTransformationPolicy.m in Sources */,
+				55CFF6481B7E73F200C8B55B /* PHRecordingControlls.m in Sources */,
+				5551C5951B309B5A00533E83 /* UIImage+Helper.m in Sources */,
+				84EA892C1C54FF8900054DE2 /* PHRowSaveViewController.m in Sources */,
+				554F2AF91B33586A00563DCF /* PHPermissionsManager.m in Sources */,
+				554B89041BB210B000ADC19B /* PHForcedOrientationNavController.m in Sources */,
+				84F763A61C59F60B002265E7 /* PHVideoVideosTableViewCell.m in Sources */,
+				84EB4B831C55232500C6D3CD /* PHVideoNewViewController.m in Sources */,
+				55920F001C238AB600758D34 /* PHEncoder.m in Sources */,
+				844B5CE41C57EABC006B73C1 /* PHInfoTableViewCell.m in Sources */,
+				84DACC481C4981E000F3FA7E /* PHClipEditerViewController.m in Sources */,
+				557391F31B42F4A4000B80CC /* PHVideoPickerViewController.m in Sources */,
+				55AB56F91B8522A4002F4401 /* PHPageViewController.m in Sources */,
+				554B890D1BB34ADE00ADC19B /* Video+CoreDataProperties.m in Sources */,
+				844602441C6C3AED004D4669 /* PHRowVideoViewController.m in Sources */,
+				55C8C5761B7D2346002A9CDF /* UIVIew+Helper.m in Sources */,
+				557391EC1B41F100000B80CC /* PHMainTabBarController.m in Sources */,
+				55B31AD51B55D698000234F5 /* PHLocationManager.m in Sources */,
+				55E0E3361BAC7D900048C51E /* SignUpViewController.m in Sources */,
+				84DACC5C1C49826E00F3FA7E /* PHVideosViewController.m in Sources */,
+				55E0E3251BAB54A70048C51E /* PHPrimaryButton.m in Sources */,
+				55AB56F61B851FB8002F4401 /* PHTutorialViewController.m in Sources */,
+				554B890E1BB34ADE00ADC19B /* Video.m in Sources */,
+				84E453EC1C553C660095A0CC /* PHVideoClipTableViewCell.m in Sources */,
+				84EDA3311C6D3BAB00CFA19E /* PHPlayVideoViewController.m in Sources */,
+				84DACC581C49826E00F3FA7E /* PHRowVideoTableViewCell.m in Sources */,
+				55D898E81B4EF5CF0023C932 /* PHApiClient.m in Sources */,
+				844B5CDF1C57E51F006B73C1 /* PHNewWarningTableViewCell.m in Sources */,
+				554B89111BB3542700ADC19B /* PHActionButton.m in Sources */,
+				5500B1E51C23879600321AA7 /* PHVideoSessionManager.m in Sources */,
+				55B96D771B2B8AC7004F8145 /* UIColor+Helper.m in Sources */,
+				5500B1E41C23879600321AA7 /* PHVideoMerge.m in Sources */,
+				84E453F81C568D4D0095A0CC /* PHClipVideoInfo.m in Sources */,
+				55B96D441B2B6FC2004F8145 /* main.m in Sources */,
+				848AB53E1C578EDE000C9DB1 /* PHSavedTableViewCell.m in Sources */,
+				845015B21C6530D800968B2F /* TPKeyboardAvoidingScrollView.m in Sources */,
+				555AAF971B59A8C300835B15 /* PHUtil.m in Sources */,
+				554F2AFC1B33595900563DCF /* PHFileManager.m in Sources */,
+				554F2B051B335CFA00563DCF /* PHCaptureViewController.m in Sources */,
+				55373E221BB0AB7B002D057D /* ProfileHeadView.m in Sources */,
+				557391EF1B41F5A3000B80CC /* PHSettingsViewController.m in Sources */,
+				559F1F001BAA191A004EC89B /* VideoMigiration.xcmappingmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55B96D4E1B2B6FC2004F8145 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55B96D4F1B2B6FC2004F8145 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55B96D531B2B6FC2004F8145 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55B96D541B2B6FC2004F8145 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55B96D621B2B6FC2004F8145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55B96D631B2B6FC2004F8145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55B96D651B2B6FC2004F8145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A23D2C9C10157DF8975597F /* Pods-PrepHero.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				CURRENT_PROJECT_VERSION = 52;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrepHero/PrepHero-Prefix.pch";
+				INFOPLIST_FILE = PrepHero/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prephero.mobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		55B96D661B2B6FC2004F8145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA54E8364B480DD8D30625E /* Pods-PrepHero.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yonggui Jin (5JHUWQ9259)";
+				CURRENT_PROJECT_VERSION = 52;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrepHero/PrepHero-Prefix.pch";
+				INFOPLIST_FILE = PrepHero/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prephero.mobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55B96D391B2B6FC2004F8145 /* Build configuration list for PBXProject "PrepHero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B96D621B2B6FC2004F8145 /* Debug */,
+				55B96D631B2B6FC2004F8145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55B96D641B2B6FC2004F8145 /* Build configuration list for PBXNativeTarget "PrepHero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55B96D651B2B6FC2004F8145 /* Debug */,
+				55B96D661B2B6FC2004F8145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55B96D481B2B6FC2004F8145 /* PrepHero.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				554B89051BB34A6400ADC19B /* PrepHero 1.2.xcdatamodel */,
+				559F1EF81BAA15E6004EC89B /* PrepHero 1.1.xcdatamodel */,
+				55B96D491B2B6FC2004F8145 /* PrepHero.xcdatamodel */,
+			);
+			currentVersion = 55B96D491B2B6FC2004F8145 /* PrepHero.xcdatamodel */;
+			name = PrepHero.xcdatamodeld;
+			path = PrepHero/PrepHero.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 55B96D361B2B6FC2004F8145 /* Project object */;
+}

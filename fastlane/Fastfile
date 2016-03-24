@@ -1,0 +1,148 @@
+# Customise this file, documentation can be found here:
+# https://github.com/KrauseFx/fastlane/tree/master/docs
+# All available actions: https://github.com/KrauseFx/fastlane/blob/master/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# By default, fastlane will send which actions are used
+# No personal data is shared, more information on https://github.com/fastlane/enhancer
+# Uncomment the following line to opt out
+# opt_out_usage
+
+# If you want to automatically update fastlane if a new version is available:
+#update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.10.0"
+
+default_platform :ios
+
+
+platform :ios do
+
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+
+    #sigh(
+    #  app_identifier: "com.prephero.mobile"
+    #)
+    # xctool # run the tests of your app
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    cocoapods
+
+    gym(
+      scheme: "PrepHero",
+      workspace: "PrepHero.xcworkspace"
+    )
+
+    snapshot
+  end
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    cocoapods
+
+    increment_build_number
+    # Download the provisioning profile for the app
+    sigh(output_path: "./fastlane/profiles") # Distribution Profile
+
+    # Download the provisioning profile
+    sigh(
+      output_path: "./fastlane/profiles",
+      app_identifier: "com.prephero.mobile"
+    )
+
+    gym(
+      scheme: "PrepHero",
+      workspace: "PrepHero.xcworkspace"
+    )
+
+    cert
+    
+    pilot
+    
+    crashlytics_upload
+
+    commit_version_bump(
+      message: 'Build Version Bump by fastlane',
+      force: true
+    )
+
+    build_number = Actions.lane_context[Actions::SharedValues::BUILD_NUMBER]
+    add_git_tag(tag: "testflight-#{build_number}")
+
+    push_to_git_remote
+
+    # sh "your_script.sh"
+    # You can also use other beta testing services here
+  end
+
+  desc "Submit to Crashlytics"
+  lane :crashlytics_upload do
+     crashlytics({
+      #crashlytics_path: './Pods/Crashlytics/Crashlytics.framework', # path to your 'Crashlytics.framework'
+      api_token: '6303d524a8e0ce63db86827293d26331cbc32e2e',
+      build_secret: '4b0e078366846b361d158096e19368f0f37734ea8c46e141dfc9ecda47de321e',
+      ipa_path: './PrepHero.ipa'
+    })
+  end
+
+  desc "Deploy a new version to the App Store"
+  desc "** Full Markdown** Support: `code`"
+  lane :deploy do
+    cocoapods
+
+    increment_build_number
+
+    gym(
+      scheme: "PrepHero",
+      workspace: "PrepHero.xcworkspace"
+    )
+    cert
+    snapshot
+    sigh(force: true)
+    deliver(skip_deploy: true, force: true)
+    frameit
+  end
+
+  lane :screenshots do
+    snapshot 
+    frameit(white: true)
+    deliver(metadata_only: true) # Upload screenshots to iTunes Connect
+  end
+  
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+    
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+    clean_build_artifacts(
+      exclude_pattern: ".*\.mobileprovision" # don't clear provisioning profiles, as we store them in git
+    )
+    say "Successfully deployed new PrepHero App Update, Xinjiang"
+
+  end
+
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+
+end
+
+
+# More information about multiple platforms in fastlane: 
+# https://github.com/KrauseFx/fastlane/blob/master/docs/Platforms.md
